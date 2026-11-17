@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Komorebi Coffee | 木漏れ日のような、やさしい一杯を。</title>
+  <meta name="description" content="自家焙煎のスペシャルティコーヒーと手づくりの焼き菓子。街の小さなカフェ「Komorebi Coffee」の公式サイトです。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#top" class="logo" aria-label="Komorebi Coffee トップへ">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M12 17h14v6a7 7 0 0 1-14 0z" fill="currentColor"/>
+          <path d="M26 19h2a3 3 0 0 1 0 6h-2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M16 10c-1 2 1 3 0 5M20 9c-1 2 1 3 0 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">Komorebi Coffee</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#access">Access</a></li>
+          <li><a href="#contact" class="nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ヒーロー ===== -->
+    <section class="hero">
+      <div class="hero__leaves" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero__content">
+        <p class="hero__en">Specialty Coffee &amp; Bake</p>
+        <h1 class="hero__title">木漏れ日のような、<br>やさしい一杯を。</h1>
+        <p class="hero__lead">自家焙煎のコーヒーと、毎朝焼き上げる焼き菓子。<br>窓辺の光とともに、ゆっくりとした時間をどうぞ。</p>
+        <div class="hero__buttons">
+          <a href="#menu" class="btn btn--primary">メニューを見る</a>
+          <a href="#access" class="btn btn--ghost">アクセス</a>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="cup">
+          <div class="cup__steam"><span></span><span></span><span></span></div>
+          <div class="cup__body"><div class="cup__coffee"></div></div>
+          <div class="cup__handle"></div>
+          <div class="cup__saucer"></div>
+        </div>
+      </div>
+      <a href="#concept" class="hero__scroll" aria-label="下へスクロール">Scroll</a>
+    </section>
+
+    <!-- ===== コンセプト ===== -->
+    <section class="section concept" id="concept">
+      <div class="container concept__grid">
+        <div class="concept__text reveal">
+          <p class="section__en">Concept</p>
+          <h2 class="section__title">一杯のコーヒーで、<br>一日を少しやさしく。</h2>
+          <p>Komorebi Coffee は、住宅街の角にある小さなカフェです。世界各地の農園から届く生豆を、店内の焙煎機で少量ずつ焼き上げています。</p>
+          <p>豆の個性を引き出すため、一杯ずつハンドドリップで。コーヒーに合う焼き菓子も、毎朝キッチンで手づくりしています。</p>
+          <ul class="concept__points">
+            <li><strong>自家焙煎</strong><span>週2回、少量ずつ焙煎</span></li>
+            <li><strong>ハンドドリップ</strong><span>注文ごとに一杯ずつ</span></li>
+            <li><strong>手づくり菓子</strong><span>国産小麦と季節の果物</span></li>
+          </ul>
+        </div>
+        <div class="concept__image reveal" aria-hidden="true">
+          <div class="art art--roaster">
+            <div class="art__sun"></div>
+            <div class="art__window"></div>
+            <div class="art__plant"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== メニュー ===== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__en">Menu</p>
+          <h2 class="section__title">メニュー</h2>
+          <p class="section__desc">表示価格はすべて税込です。季節により内容が変わることがあります。</p>
+        </div>
+
+        <div class="tabs reveal" role="tablist" aria-label="メニューカテゴリ">
+          <button class="tabs__btn is-active" role="tab" aria-selected="true" aria-controls="panel-coffee" id="tab-coffee">Coffee</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-drink" id="tab-drink" tabindex="-1">Drink</button>
+          <button class="tabs__btn" role="tab" aria-selected="false" aria-controls="panel-food" id="tab-food" tabindex="-1">Food &amp; Sweets</button>
+        </div>
+
+        <div class="menu__panel is-active" id="panel-coffee" role="tabpanel" aria-labelledby="tab-coffee">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div><h3>Komorebi ブレンド</h3><p>ナッツとチョコのような甘み。当店の定番。</p></div>
+              <span class="menu__price">¥550</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>エチオピア イルガチェフェ <em class="tag">浅煎り</em></h3><p>レモンティーのような華やかな香り。</p></div>
+              <span class="menu__price">¥650</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>グアテマラ アンティグア <em class="tag">中煎り</em></h3><p>キャラメルの甘さとやわらかな酸味。</p></div>
+              <span class="menu__price">¥600</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>マンデリン <em class="tag">深煎り</em></h3><p>力強いコクとハーブのような余韻。</p></div>
+              <span class="menu__price">¥600</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>カフェラテ</h3><p>エスプレッソと北海道産ミルク。オーツミルクにも変更可（+¥50）。</p></div>
+              <span class="menu__price">¥600</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>水出しアイスコーヒー</h3><p>12時間かけて抽出した、すっきりとした一杯。</p></div>
+              <span class="menu__price">¥600</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" id="panel-drink" role="tabpanel" aria-labelledby="tab-drink" hidden>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div><h3>ほうじ茶ラテ</h3><p>京都の焙じ茶を使った、香ばしいラテ。</p></div>
+              <span class="menu__price">¥600</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>自家製レモネード</h3><p>国産レモンを蜂蜜で漬け込みました。</p></div>
+              <span class="menu__price">¥580</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>季節のフルーツソーダ</h3><p>旬の果物でつくるシロップのソーダ割り。</p></div>
+              <span class="menu__price">¥650</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>オーガニック紅茶</h3><p>アールグレイ / ダージリン / カモミール</p></div>
+              <span class="menu__price">¥550</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu__panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food" hidden>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <div><h3>ベイクドチーズケーキ</h3><p>しっとり濃厚。深煎りコーヒーと好相性。</p></div>
+              <span class="menu__price">¥550</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>季節のフルーツタルト <em class="tag">数量限定</em></h3><p>旬の果物をたっぷりのせた、サクサクのタルト。</p></div>
+              <span class="menu__price">¥680</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>スコーン（2個）</h3><p>プレーン・紅茶。クロテッドクリームとジャム添え。</p></div>
+              <span class="menu__price">¥520</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>本日のサンドイッチ</h3><p>自家製パンでつくる、日替わりのサンドイッチ。</p></div>
+              <span class="menu__price">¥850</span>
+            </li>
+            <li class="menu__item">
+              <div><h3>モーニングセット <em class="tag">8:00–11:00</em></h3><p>トースト・ゆで卵・サラダ＋お好きなドリンク。</p></div>
+              <span class="menu__price">¥900</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ギャラリー ===== -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__en">Gallery</p>
+          <h2 class="section__title">店内の様子</h2>
+        </div>
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--large reveal">
+            <img src="images/gallery-latte.svg" alt="チューリップのラテアートを描いたカフェラテ" width="600" height="600" loading="lazy">
+            <figcaption>ラテアートも一杯ずつ丁寧に</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery-beans.svg" alt="スクープに盛られた焙煎したてのコーヒー豆" width="400" height="400" loading="lazy">
+            <figcaption>焙煎したての豆</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery-cake.svg" alt="お皿にのったベイクドチーズケーキ" width="400" height="400" loading="lazy">
+            <figcaption>手づくりの焼き菓子</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery-window.svg" alt="光が差し込む窓辺のテーブル席" width="400" height="400" loading="lazy">
+            <figcaption>光が差し込む窓辺の席</figcaption>
+          </figure>
+          <figure class="gallery__item reveal">
+            <img src="images/gallery-drip.svg" alt="ケトルでお湯を注ぐハンドドリップ" width="400" height="400" loading="lazy">
+            <figcaption>ハンドドリップ</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== お知らせ ===== -->
+    <section class="section news" id="news">
+      <div class="container news__inner">
+        <div class="section__head section__head--left reveal">
+          <p class="section__en">News</p>
+          <h2 class="section__title">お知らせ</h2>
+        </div>
+        <ul class="news__list reveal">
+          <li><time datetime="2026-11-10">2026.11.10</time><span class="news__cat">Menu</span><p>冬季限定「ジンジャーシナモンラテ」の提供を始めました。</p></li>
+          <li><time datetime="2026-10-28">2026.10.28</time><span class="news__cat">Event</span><p>11月23日（月・祝）にハンドドリップ教室を開催します。</p></li>
+          <li><time datetime="2026-10-01">2026.10.01</time><span class="news__cat">Beans</span><p>新しい豆「コロンビア ウィラ」が入荷しました。</p></li>
+          <li><time datetime="2026-09-15">2026.09.15</time><span class="news__cat">Info</span><p>年末年始の営業日についてのお知らせ。</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== アクセス ===== -->
+    <section class="section access" id="access">
+      <div class="container access__grid">
+        <div class="reveal">
+          <p class="section__en">Access</p>
+          <h2 class="section__title">店舗情報</h2>
+          <dl class="info">
+            <div><dt>店名</dt><dd>Komorebi Coffee（コモレビ コーヒー）</dd></div>
+            <div><dt>住所</dt><dd>〒000-0000 東京都○○区△△ 1-2-3</dd></div>
+            <div><dt>アクセス</dt><dd>○○駅 東口から徒歩5分</dd></div>
+            <div><dt>営業時間</dt><dd>8:00 – 18:00（L.O. 17:30）</dd></div>
+            <div><dt>定休日</dt><dd>毎週水曜日・第3木曜日</dd></div>
+            <div><dt>席数</dt><dd>18席（テラス4席）／全席禁煙</dd></div>
+          </dl>
+          <p class="note">※ 住所・電話番号は架空のものです。</p>
+        </div>
+        <figure class="map reveal">
+          <img src="images/map.svg" alt="○○駅東口から、けやき通りを渡って徒歩5分の場所にある店舗の地図（イメージ）" width="500" height="500" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== お問い合わせ ===== -->
+    <section class="section contact" id="contact">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <p class="section__en">Contact</p>
+          <h2 class="section__title">お問い合わせ</h2>
+          <p class="section__desc">貸切・イベント・豆の卸売りなど、お気軽にご相談ください。</p>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            <p class="form__error" data-for="name"></p>
+          </div>
+          <div class="form__row">
+            <label for="email">メールアドレス <span class="req">必須</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="form__error" data-for="email"></p>
+          </div>
+          <div class="form__row">
+            <label for="topic">お問い合わせ内容</label>
+            <select id="topic" name="topic">
+              <option>ご質問</option>
+              <option>貸切・イベント</option>
+              <option>コーヒー豆の購入・卸売り</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="message">メッセージ <span class="req">必須</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <p class="form__error" data-for="message"></p>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">送信する</button>
+          <p class="form__success" id="formSuccess" hidden>送信ありがとうございました！（デモのため、実際には送信されません）</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--light">
+        <span class="logo__text">Komorebi Coffee</span>
+      </a>
+      <p class="footer__text">8:00 – 18:00 ／ 水曜定休</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Komorebi Coffee. This is a portfolio demo site.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="ページの先頭へ">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

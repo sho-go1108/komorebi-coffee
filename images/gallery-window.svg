@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe0d2"/>
+      <stop offset="1" stop-color="#9fb894"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.22" r="0.5">
+      <stop offset="0" stop-color="#fff7de"/>
+      <stop offset="0.4" stop-color="#fff1c6" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#fff1c6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- wall -->
+  <rect width="400" height="400" fill="#efe3d1"/>
+  <!-- window -->
+  <rect x="50" y="30" width="300" height="250" rx="6" fill="url(#sky)"/>
+  <circle cx="110" cy="230" r="70" fill="#7d8f69" opacity="0.7"/>
+  <circle cx="300" cy="250" r="60" fill="#6b7d58" opacity="0.6"/>
+  <rect x="50" y="30" width="300" height="250" fill="url(#sun)"/>
+  <g fill="none" stroke="#fffdf9" stroke-width="12">
+    <rect x="50" y="30" width="300" height="250" rx="6"/>
+    <path d="M200 30 V280 M50 155 H350"/>
+  </g>
+  <!-- light on floor -->
+  <path d="M60 290 L340 290 L400 400 L0 400 Z" fill="#fff4da" opacity="0.5"/>
+  <!-- sill + table -->
+  <rect x="36" y="280" width="328" height="14" rx="4" fill="#c9a27a"/>
+  <rect x="120" y="330" width="220" height="14" rx="4" fill="#8c6247"/>
+  <rect x="220" y="344" width="16" height="56" fill="#7a523b"/>
+  <!-- cup on table -->
+  <path d="M250 300 h40 v18 a20 20 0 0 1 -40 0z" fill="#fffdf9"/>
+  <path d="M290 304 h6 a8 8 0 0 1 0 16 h-6" fill="none" stroke="#fffdf9" stroke-width="4"/>
+  <!-- plant on sill -->
+  <path d="M90 280 h36 l-4 -26 h-28z" fill="#c98e4a"/>
+  <path d="M108 254 c-20 -30 -30 -40 -40 -40 c10 20 20 30 40 40z M108 254 c10 -36 24 -46 36 -46 c-6 22 -16 36 -36 46z M108 254 c-2 -30 4 -50 0 -64 c-8 14 -6 40 0 64z" fill="#6b7d58"/>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "name": "komorebi-coffee",
+  "version": "1.0.0",
+  "private": true,
+  "description": "架空のカフェ「Komorebi Coffee」のポートフォリオ用 Web サイト",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
