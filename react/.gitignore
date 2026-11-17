@@ -1,0 +1,4 @@
+# ビルドの出力（pnpm run build で毎回作り直されるので管理しない）
+dist/
+node_modules/
+*.tsbuildinfo

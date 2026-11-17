@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <ellipse cx="160" cy="200" rx="120" ry="24" fill="#3e2c23" opacity="0.12"/>
+  <ellipse cx="160" cy="192" rx="118" ry="26" fill="#fffdf9"/>
+  <ellipse cx="160" cy="188" rx="86" ry="16" fill="none" stroke="#efe5d8" stroke-width="2"/>
+  <!-- base -->
+  <path d="M104 186 h112 l-6 -22 h-100z" fill="#d9a865"/>
+  <!-- cream mound -->
+  <path d="M110 166 C110 120 130 82 160 72 C190 82 210 120 210 166 z" fill="#a8774a"/>
+  <!-- chestnut cream lines -->
+  <g fill="none" stroke="#c4935f" stroke-width="5" stroke-linecap="round">
+    <path d="M122 160 C120 128 138 96 156 84"/>
+    <path d="M136 162 C134 130 148 100 160 86"/>
+    <path d="M152 163 C152 130 158 104 164 88"/>
+    <path d="M168 163 C170 130 170 104 166 88"/>
+    <path d="M184 162 C186 130 178 100 168 86"/>
+    <path d="M198 160 C200 128 186 96 166 84"/>
+  </g>
+  <!-- chestnut -->
+  <path d="M160 52 C176 52 184 66 180 76 C172 84 148 84 140 76 C136 66 144 52 160 52z" fill="#7a4a2a"/>
+  <path d="M142 74 C150 80 170 80 178 74 L176 80 C166 86 154 86 144 80z" fill="#c9a06a"/>
+  <ellipse cx="152" cy="62" rx="5" ry="3" fill="#fff" opacity="0.35"/>
+  <!-- powder sugar -->
+  <g fill="#fffdf9" opacity="0.8">
+    <circle cx="132" cy="120" r="1.6"/><circle cx="150" cy="104" r="1.4"/><circle cx="176" cy="112" r="1.6"/><circle cx="190" cy="140" r="1.4"/><circle cx="126" cy="146" r="1.4"/>
+  </g>
+</svg>

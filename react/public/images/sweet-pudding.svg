@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <ellipse cx="160" cy="200" rx="116" ry="22" fill="#3e2c23" opacity="0.12"/>
+  <ellipse cx="160" cy="192" rx="114" ry="26" fill="#fffdf9"/>
+  <!-- caramel pool -->
+  <ellipse cx="160" cy="188" rx="74" ry="14" fill="#a8622c" opacity="0.85"/>
+  <!-- pudding body -->
+  <path d="M112 186 L124 98 C126 90 194 90 196 98 L208 186 C200 196 120 196 112 186z" fill="#f3d27e"/>
+  <path d="M196 98 L208 186 C204 191 196 193 186 194 L180 98z" fill="#e2bb62" opacity="0.6"/>
+  <!-- caramel top -->
+  <path d="M124 98 C126 88 194 88 196 98 L198 112 C188 122 176 108 166 120 C156 110 146 124 136 114 C130 120 124 116 122 112z" fill="#8a4a1f"/>
+  <ellipse cx="160" cy="96" rx="36" ry="7" fill="#a15a26"/>
+  <!-- shine -->
+  <path d="M132 126 C130 146 130 160 132 176" stroke="#fff" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <!-- cream + cherry -->
+  <path d="M146 92 c-6 -2 -6 -12 4 -12 c2 -10 18 -10 20 0 c10 0 10 10 4 12z" fill="#fffaf1"/>
+  <circle cx="160" cy="72" r="9" fill="#c0392b"/>
+  <path d="M160 64 C162 54 170 50 176 48" stroke="#5f7a3e" stroke-width="2" fill="none"/>
+  <circle cx="157" cy="69" r="2.5" fill="#fff" opacity="0.6"/>
+</svg>

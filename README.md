@@ -12,7 +12,16 @@
 | `coffee.html`（コーヒー） | 焙煎度ガイドと、コーヒー豆 8 種類の産地・味の特徴（酸味・苦味・コク） |
 | `sweets.html`（お菓子） | ケーキ・焼き菓子・季節限定の 8 品と、合わせたいコーヒー |
 
-## 使用技術
+## 2 つのバージョン
+
+| バージョン | 場所 | 内容 |
+|---|---|---|
+| HTML 版 | このフォルダ（ルート） | HTML / CSS / JavaScript だけで作成 |
+| React 版 | [`react/`](react/README.md) | 同じサイトを React + TypeScript で作り直したもの |
+
+最初に HTML/CSS/JS で作り、その後、共通部品の使い回しやデータ管理をしやすくするために React + TypeScript で作り直しました。違いは [React 版の README](react/README.md) にまとめています。
+
+## 使用技術（HTML 版）
 
 - HTML5
 - CSS3（CSS Grid / Flexbox / カスタムプロパティ / アニメーション）
