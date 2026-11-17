@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コーヒー豆の種類 | Komorebi Coffee</title>
+  <meta name="description" content="Komorebi Coffee で扱う自家焙煎のコーヒー豆の一覧。産地・焙煎度・味の特徴を紹介しています。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="subpage">
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo" aria-label="Komorebi Coffee トップへ">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M12 17h14v6a7 7 0 0 1-14 0z" fill="currentColor"/>
+          <path d="M26 19h2a3 3 0 0 1 0 6h-2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M16 10c-1 2 1 3 0 5M20 9c-1 2 1 3 0 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">Komorebi Coffee</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html#concept">Concept</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="coffee.html" aria-current="page">Coffee</a></li>
+          <li><a href="sweets.html">Sweets</a></li>
+          <li><a href="index.html#access">Access</a></li>
+          <li><a href="index.html#contact" class="nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ページタイトル ===== -->
+    <section class="page-hero page-hero--coffee">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Coffee</span>
+        </nav>
+        <p class="section__en">Our Beans</p>
+        <h1 class="page-hero__title">コーヒー豆の種類</h1>
+        <p class="page-hero__lead">世界各地の農園から届いた生豆を、店内で少量ずつ焙煎しています。<br>すべての豆は店頭で一杯ずつ味わえるほか、100g から量り売りもしています。</p>
+      </div>
+    </section>
+
+    <!-- ===== 焙煎度ガイド ===== -->
+    <section class="section roast">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__en">Roast Guide</p>
+          <h2 class="section__title">焙煎度で選ぶ</h2>
+          <p class="section__desc">焙煎が浅いほどフルーティーな酸味が、深いほど苦味とコクが強くなります。</p>
+        </div>
+        <ol class="roast__scale reveal">
+          <li class="roast__step roast__step--light">
+            <span class="roast__bean" aria-hidden="true"></span>
+            <h3>浅煎り</h3>
+            <p>果実のような明るい酸味と華やかな香り。紅茶のように軽やか。</p>
+          </li>
+          <li class="roast__step roast__step--medium">
+            <span class="roast__bean" aria-hidden="true"></span>
+            <h3>中煎り</h3>
+            <p>酸味と甘み、苦味のバランスが良い。はじめての方におすすめ。</p>
+          </li>
+          <li class="roast__step roast__step--dark">
+            <span class="roast__bean" aria-hidden="true"></span>
+            <h3>深煎り</h3>
+            <p>しっかりした苦味とコク。ミルクや甘いお菓子とよく合います。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 豆の一覧 ===== -->
+    <section class="section beans" id="beans">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__en">Line-up</p>
+          <h2 class="section__title">豆のラインナップ</h2>
+        </div>
+
+        <div class="filter reveal" role="group" aria-label="焙煎度で絞り込む" data-filter-target="#beanList">
+          <button class="tabs__btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="tabs__btn" data-filter="light" aria-pressed="false">浅煎り</button>
+          <button class="tabs__btn" data-filter="medium" aria-pressed="false">中煎り</button>
+          <button class="tabs__btn" data-filter="dark" aria-pressed="false">深煎り</button>
+        </div>
+        <p class="filter__count" aria-live="polite"><span data-count>8</span> 種類</p>
+
+        <ul class="bean-list" id="beanList">
+
+          <li class="bean-card" data-category="medium dark">
+            <div class="bean-card__head bean-card__head--mediumdark">
+              <span class="bean-card__badge">定番</span>
+              <p class="bean-card__origin">Blend</p>
+              <h3 class="bean-card__name">Komorebi ブレンド</h3>
+              <span class="bean-card__roast">中深煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">ブラジルとコロンビアをベースに、エチオピアで香りを添えた当店の看板ブレンド。毎日飲んでも飽きない味です。</p>
+              <ul class="notes"><li>ナッツ</li><li>ミルクチョコ</li><li>キャラメル</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:2" aria-label="5段階中2"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥550</span><span>豆 100g ¥900</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="light">
+            <div class="bean-card__head bean-card__head--light">
+              <span class="bean-card__badge">人気</span>
+              <p class="bean-card__origin">Ethiopia</p>
+              <h3 class="bean-card__name">エチオピア イルガチェフェ</h3>
+              <span class="bean-card__roast">浅煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">標高 2,000m の小規模農家が育てた豆。レモンティーのような爽やかさと、花のような香りが広がります。</p>
+              <ul class="notes"><li>レモン</li><li>ジャスミン</li><li>紅茶</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:5" aria-label="5段階中5"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:1" aria-label="5段階中1"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:2" aria-label="5段階中2"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥650</span><span>豆 100g ¥1,200</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="light">
+            <div class="bean-card__head bean-card__head--light">
+              <p class="bean-card__origin">Kenya</p>
+              <h3 class="bean-card__name">ケニア ニエリ</h3>
+              <span class="bean-card__roast">浅煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">ジューシーで力強い酸味が特徴。冷めるにつれて甘みが増し、ベリーのような余韻が続きます。</p>
+              <ul class="notes"><li>カシス</li><li>ブラッドオレンジ</li><li>黒糖</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:5" aria-label="5段階中5"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:2" aria-label="5段階中2"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥700</span><span>豆 100g ¥1,300</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="medium">
+            <div class="bean-card__head bean-card__head--medium">
+              <span class="bean-card__badge bean-card__badge--new">New</span>
+              <p class="bean-card__origin">Colombia</p>
+              <h3 class="bean-card__name">コロンビア ウィラ</h3>
+              <span class="bean-card__roast">中煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">10月に入荷した新しい豆。赤いリンゴのような甘酸っぱさと、なめらかな口当たりが魅力です。</p>
+              <ul class="notes"><li>赤リンゴ</li><li>ブラウンシュガー</li><li>はちみつ</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:2" aria-label="5段階中2"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥600</span><span>豆 100g ¥1,000</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="medium">
+            <div class="bean-card__head bean-card__head--medium">
+              <p class="bean-card__origin">Guatemala</p>
+              <h3 class="bean-card__name">グアテマラ アンティグア</h3>
+              <span class="bean-card__roast">中煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">火山灰の土壌で育った豆。キャラメルのような甘さと、オレンジのようなやわらかい酸味があります。</p>
+              <ul class="notes"><li>キャラメル</li><li>カカオ</li><li>オレンジ</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥600</span><span>豆 100g ¥1,000</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="medium dark">
+            <div class="bean-card__head bean-card__head--mediumdark">
+              <p class="bean-card__origin">Brazil</p>
+              <h3 class="bean-card__name">ブラジル セラード</h3>
+              <span class="bean-card__roast">中深煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">酸味が少なく、香ばしくてまろやか。カフェラテにしてもおいしい、やさしい味わいです。</p>
+              <ul class="notes"><li>ピーナッツ</li><li>ミルクチョコ</li><li>トースト</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:1" aria-label="5段階中1"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥550</span><span>豆 100g ¥850</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="dark">
+            <div class="bean-card__head bean-card__head--dark">
+              <p class="bean-card__origin">Indonesia</p>
+              <h3 class="bean-card__name">マンデリン</h3>
+              <span class="bean-card__roast">深煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">スマトラ島の豆を深く焙煎。重厚なコクとハーブのような独特の余韻は、チーズケーキと相性抜群です。</p>
+              <ul class="notes"><li>ダークチョコ</li><li>ハーブ</li><li>スパイス</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:1" aria-label="5段階中1"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:5" aria-label="5段階中5"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:5" aria-label="5段階中5"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥600</span><span>豆 100g ¥1,000</span></p>
+            </div>
+          </li>
+
+          <li class="bean-card" data-category="medium">
+            <div class="bean-card__head bean-card__head--medium">
+              <span class="bean-card__badge">カフェインレス</span>
+              <p class="bean-card__origin">Colombia / Decaf</p>
+              <h3 class="bean-card__name">デカフェ コロンビア</h3>
+              <span class="bean-card__roast">中煎り</span>
+            </div>
+            <div class="bean-card__body">
+              <p class="bean-card__desc">水だけでカフェインを 99.9% 取り除いた豆。夜や妊娠中の方にも、おいしいコーヒーを楽しんでほしくて。</p>
+              <ul class="notes"><li>ミルクティー</li><li>アーモンド</li><li>はちみつ</li></ul>
+              <dl class="taste">
+                <div><dt>酸味</dt><dd><span class="meter" style="--v:2" aria-label="5段階中2"></span></dd></div>
+                <div><dt>苦味</dt><dd><span class="meter" style="--v:2" aria-label="5段階中2"></span></dd></div>
+                <div><dt>コク</dt><dd><span class="meter" style="--v:3" aria-label="5段階中3"></span></dd></div>
+              </dl>
+              <p class="bean-card__price"><span>1杯 ¥600</span><span>豆 100g ¥1,100</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== 豆の購入 ===== -->
+    <section class="section buy">
+      <div class="container">
+        <div class="info-box reveal">
+          <div>
+            <p class="section__en">To Go</p>
+            <h2 class="section__title">豆の量り売り</h2>
+            <p>すべての豆を 100g から販売しています。ご自宅の器具に合わせて挽いてお渡しします（豆のままも可）。</p>
+          </div>
+          <ul class="info-box__list">
+            <li><strong>100g</strong><span>約 7〜8 杯分</span></li>
+            <li><strong>200g</strong><span>100g の価格 ×2 から 5% オフ</span></li>
+            <li><strong>挽き方</strong><span>ペーパー／フレンチプレス／エスプレッソ</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 次のページへ ===== -->
+    <section class="section next-page">
+      <div class="container">
+        <a href="sweets.html" class="page-link page-link--wide reveal">
+          <span class="page-link__en">Next — Sweets</span>
+          <span class="page-link__title">コーヒーに合うお菓子を見る</span>
+          <span class="page-link__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo logo--light">
+        <span class="logo__text">Komorebi Coffee</span>
+      </a>
+      <ul class="footer__nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+      </ul>
+      <p class="footer__text">8:00 – 18:00 ／ 水曜定休</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Komorebi Coffee. This is a portfolio demo site.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="ページの先頭へ">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

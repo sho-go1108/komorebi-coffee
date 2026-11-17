@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240">
+  <ellipse cx="160" cy="198" rx="126" ry="24" fill="#3e2c23" opacity="0.12"/>
+  <ellipse cx="160" cy="190" rx="124" ry="28" fill="#fffdf9"/>
+  <!-- scone 1 -->
+  <g>
+    <path d="M70 176 C64 150 70 120 84 112 C100 104 126 106 136 116 C146 128 144 160 138 176 C120 184 88 184 70 176z" fill="#d9a35c"/>
+    <path d="M72 150 C90 156 120 156 140 148 L138 176 C120 184 88 184 70 176z" fill="#f1d7a4"/>
+    <path d="M84 112 C100 104 126 106 136 116 C126 124 96 124 84 112z" fill="#b97a3a"/>
+    <path d="M72 150 C90 156 120 156 140 148" stroke="#c38a49" stroke-width="2" fill="none"/>
+  </g>
+  <!-- scone 2 (tea) -->
+  <g>
+    <path d="M140 178 C134 154 140 128 154 120 C170 112 196 114 206 124 C216 136 214 164 208 178 C190 186 158 186 140 178z" fill="#c8955a"/>
+    <path d="M142 154 C160 160 190 160 210 152 L208 178 C190 186 158 186 140 178z" fill="#e9cf9e"/>
+    <path d="M154 120 C170 112 196 114 206 124 C196 132 166 132 154 120z" fill="#a8703a"/>
+    <g fill="#6b4632"><circle cx="160" cy="166" r="1.6"/><circle cx="176" cy="170" r="1.6"/><circle cx="190" cy="164" r="1.6"/><circle cx="168" cy="140" r="1.4"/><circle cx="188" cy="138" r="1.4"/></g>
+  </g>
+  <!-- clotted cream -->
+  <ellipse cx="246" cy="176" rx="24" ry="10" fill="#efe5d8"/>
+  <path d="M226 172 c0 -18 40 -18 40 0z" fill="#fff6dc"/>
+  <!-- jam -->
+  <ellipse cx="250" cy="146" rx="22" ry="8" fill="#efe5d8"/>
+  <path d="M232 142 c0 -14 36 -14 36 0 c-6 6 -30 6 -36 0z" fill="#b8434f"/>
+  <circle cx="244" cy="136" r="2.5" fill="#fff" opacity="0.5"/>
+</svg>

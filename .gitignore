@@ -8,3 +8,7 @@ node_modules/
 
 # Claude のローカル設定
 .claude/
+
+# 個人用の勉強メモ（GitHub には上げない）
+開発の振り返り.md
+開発の振り返り.pdf

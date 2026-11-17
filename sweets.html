@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お菓子 | Komorebi Coffee</title>
+  <meta name="description" content="Komorebi Coffee で毎朝焼き上げる手づくりのお菓子。ケーキ・焼き菓子・季節限定メニューと、合わせたいコーヒーを紹介しています。">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="subpage">
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo" aria-label="Komorebi Coffee トップへ">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M12 17h14v6a7 7 0 0 1-14 0z" fill="currentColor"/>
+          <path d="M26 19h2a3 3 0 0 1 0 6h-2" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M16 10c-1 2 1 3 0 5M20 9c-1 2 1 3 0 5" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__text">Komorebi Coffee</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html#concept">Concept</a></li>
+          <li><a href="index.html#menu">Menu</a></li>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="sweets.html" aria-current="page">Sweets</a></li>
+          <li><a href="index.html#access">Access</a></li>
+          <li><a href="index.html#contact" class="nav__cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== ページタイトル ===== -->
+    <section class="page-hero page-hero--sweets">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Sweets</span>
+        </nav>
+        <p class="section__en">Homemade Sweets</p>
+        <h1 class="page-hero__title">お菓子</h1>
+        <p class="page-hero__lead">毎朝キッチンで焼き上げる、手づくりのお菓子。<br>国産小麦と旬の果物を使い、コーヒーに合う甘さに仕上げています。</p>
+      </div>
+    </section>
+
+    <!-- ===== お菓子の一覧 ===== -->
+    <section class="section sweets">
+      <div class="container">
+        <div class="filter reveal" role="group" aria-label="種類で絞り込む" data-filter-target="#sweetList">
+          <button class="tabs__btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="tabs__btn" data-filter="cake" aria-pressed="false">ケーキ</button>
+          <button class="tabs__btn" data-filter="baked" aria-pressed="false">焼き菓子</button>
+          <button class="tabs__btn" data-filter="seasonal" aria-pressed="false">季節限定</button>
+        </div>
+        <p class="filter__count" aria-live="polite"><span data-count>8</span> 種類</p>
+
+        <ul class="sweet-list" id="sweetList">
+
+          <li class="sweet-card" data-category="seasonal cake">
+            <div class="sweet-card__img sweet-card__img--seasonal">
+              <img src="images/sweet-montblanc.svg" alt="和栗のモンブラン" width="320" height="240" loading="lazy">
+              <span class="sweet-card__badge">11月限定</span>
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">和栗のモンブラン</h3>
+              <p class="sweet-card__desc">熊本県産の和栗をたっぷり使った、甘さ控えめのモンブラン。中にはサクサクのメレンゲが入っています。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">Komorebi ブレンド</a></p>
+              <p class="sweet-card__price">¥720</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="seasonal cake">
+            <div class="sweet-card__img sweet-card__img--seasonal">
+              <img src="images/sweet-tart.svg" alt="季節のフルーツタルト" width="320" height="240" loading="lazy">
+              <span class="sweet-card__badge">数量限定</span>
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">季節のフルーツタルト</h3>
+              <p class="sweet-card__desc">今の時期はいちじくと洋梨。カスタードとアーモンドクリームの 2 層仕立てです。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">エチオピア イルガチェフェ</a></p>
+              <p class="sweet-card__price">¥680</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="cake">
+            <div class="sweet-card__img">
+              <img src="images/sweet-cheesecake.svg" alt="ベイクドチーズケーキ" width="320" height="240" loading="lazy">
+              <span class="sweet-card__badge sweet-card__badge--popular">人気 No.1</span>
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">ベイクドチーズケーキ</h3>
+              <p class="sweet-card__desc">クリームチーズを贅沢に使った、しっとり濃厚な一品。底のザクザクしたクッキー生地がアクセント。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">マンデリン</a></p>
+              <p class="sweet-card__price">¥550</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="cake">
+            <div class="sweet-card__img">
+              <img src="images/sweet-chocolat.svg" alt="ガトーショコラ" width="320" height="240" loading="lazy">
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">ガトーショコラ</h3>
+              <p class="sweet-card__desc">カカオ 70% のチョコレートで焼いた、ほろ苦い大人の味。軽くホイップした生クリームを添えて。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">グアテマラ アンティグア</a></p>
+              <p class="sweet-card__price">¥580</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="cake">
+            <div class="sweet-card__img">
+              <img src="images/sweet-pudding.svg" alt="昔ながらの固めプリン" width="320" height="240" loading="lazy">
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">昔ながらの固めプリン</h3>
+              <p class="sweet-card__desc">卵の味がしっかりした、固めの蒸し焼きプリン。ほろ苦いカラメルソースが決め手です。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">ブラジル セラード</a></p>
+              <p class="sweet-card__price">¥480</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="baked">
+            <div class="sweet-card__img sweet-card__img--baked">
+              <img src="images/sweet-scone.svg" alt="スコーン" width="320" height="240" loading="lazy">
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">スコーン（2個）</h3>
+              <p class="sweet-card__desc">外はサクッ、中はふんわり。プレーンと紅茶の 2 種類に、クロテッドクリームとジャムを添えて。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">Komorebi ブレンド</a></p>
+              <p class="sweet-card__price">¥520</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="baked">
+            <div class="sweet-card__img sweet-card__img--baked">
+              <img src="images/sweet-financier.svg" alt="フィナンシェ" width="320" height="240" loading="lazy">
+              <span class="sweet-card__badge sweet-card__badge--takeout">持ち帰りOK</span>
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">焦がしバターのフィナンシェ</h3>
+              <p class="sweet-card__desc">しっかり焦がしたバターとアーモンドの香ばしさ。手みやげにも人気です。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">コロンビア ウィラ</a></p>
+              <p class="sweet-card__price">¥280</p>
+            </div>
+          </li>
+
+          <li class="sweet-card" data-category="baked">
+            <div class="sweet-card__img sweet-card__img--baked">
+              <img src="images/sweet-cookie.svg" alt="自家製クッキー" width="320" height="240" loading="lazy">
+              <span class="sweet-card__badge sweet-card__badge--takeout">持ち帰りOK</span>
+            </div>
+            <div class="sweet-card__body">
+              <h3 class="sweet-card__name">自家製クッキー（3枚）</h3>
+              <p class="sweet-card__desc">チョコチップ・くるみ・コーヒーの 3 種類。コーヒー味には当店の豆を使っています。</p>
+              <p class="sweet-card__pair">合わせたいコーヒー<a href="coffee.html">ブラジル セラード</a></p>
+              <p class="sweet-card__price">¥380</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== テイクアウト ===== -->
+    <section class="section buy">
+      <div class="container">
+        <div class="info-box reveal">
+          <div>
+            <p class="section__en">Take Out &amp; Gift</p>
+            <h2 class="section__title">お持ち帰り・ギフト</h2>
+            <p>焼き菓子はすべてお持ち帰りいただけます。ケーキは前日までのご予約で、ホールでもご用意できます。</p>
+          </div>
+          <ul class="info-box__list">
+            <li><strong>焼き菓子</strong><span>個包装・当日から 5 日間日持ち</span></li>
+            <li><strong>ギフトボックス</strong><span>焼き菓子 6 個入り ¥2,000〜</span></li>
+            <li><strong>ホールケーキ</strong><span>前日 15 時までに要予約</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 次のページへ ===== -->
+    <section class="section next-page">
+      <div class="container">
+        <a href="coffee.html" class="page-link page-link--wide reveal">
+          <span class="page-link__en">Next — Coffee</span>
+          <span class="page-link__title">お菓子に合うコーヒー豆を見る</span>
+          <span class="page-link__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo logo--light">
+        <span class="logo__text">Komorebi Coffee</span>
+      </a>
+      <ul class="footer__nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="sweets.html">Sweets</a></li>
+      </ul>
+      <p class="footer__text">8:00 – 18:00 ／ 水曜定休</p>
+      <p class="footer__copy">&copy; <span id="year">2026</span> Komorebi Coffee. This is a portfolio demo site.</p>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="ページの先頭へ">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
